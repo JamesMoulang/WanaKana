@@ -45,4 +45,9 @@ function splitIntoRomaji(input, options) {
   return applyMapping(katakanaToHiragana(input, toRomaji, true), map, !options.IMEMode);
 }
 
-export default toRomaji;
+function toRomajiSplit(input = '', options = {}) {
+  const mergedOptions = mergeWithDefaultOptions(options);
+  return splitIntoRomaji(input, mergedOptions);
+}
+
+export default {toRomaji, toRomajiSplit};
