@@ -14,7 +14,7 @@ export { default as isMixed } from './isMixed';
 export { default as isKanji } from './isKanji';
 
 // Conversion
-export { toRomaji, toRomajiSplit } from './toRomaji';
+export { toRomaji } from './toRomaji';
 export { default as toKana } from './toKana';
 export { default as toHiragana } from './toHiragana';
 export { default as toKatakana } from './toKatakana';
